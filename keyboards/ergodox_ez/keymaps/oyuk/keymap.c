@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        | LALT(SPC) | Right|  | Left | EISU   |
  *                                 ,------|------|------|       |------+--------+------.
  *                                 | L2   |      | ---  |       |  Up  |        |      |
- *                                 | Space| \ |  |------|       |------|  = +   | Enter|
+ *                                 | Space| \ |  |------|       |------|  backs | Enter|
  *                                 |      |      |  N   |       | Down |        |      |
  *                                 `--------------------'       `----------------------'
  *  : ... In case ErgoDox EZ is detected as JIS keyboard
@@ -53,7 +53,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                   KC_LANG1,KC_EQL, KC_LBRC,KC_RBRC,          LT(MDIA,KC_BSLS),
              KC_LEFT,       KC_LANG2,
              KC_UP,
-             KC_DOWN,KC_EQL, KC_ENT
+             KC_DOWN, KC_BSPC, KC_ENT
     ),
 /* Keymap 1: Symbol Layer
  *
