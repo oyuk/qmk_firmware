@@ -19,9 +19,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|      |           |  L2  |------+------+------+------+------+--------|
  * | Ctl    |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  | '  " |  Enter |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
- * | LShift |   Z  |   X  |   C  |   V  |   B  | = +  |           |  B   |   N  |   M  | ,  < | .  > | /  ? |  \  |  |
+ * | LShift |   Z  |   X  |   C  |   V  |   B  | = +  |           | KANA |   N  |   M  | ,  < | .  > | /  ? |  \  |  |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   | \ | Alt  |  L1  |    | Cmd  |                                       | KANA | = +  | [  { | ]  } | L2 \ |
+ *   | \ | Alt  |  L1  |    |    |  Cmd |                                       | cmd(shift(backslash)) | = +  | [  { | ]  } | L2 \ |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,---------------.
  *                                        | LALT(SPC) | Right|  | Left | EISU   |
@@ -49,8 +49,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              KC_TRNS,     KC_6,   KC_7,    KC_8,   KC_9,   KC_0,             KC_MINS,
              LT(MDIA, KC_SCLN),     KC_Y,   KC_U,    KC_I,   KC_O,   KC_P,             KC_EQL,
                           KC_H,   KC_J,    KC_K,   KC_L,   KC_QUOT, KC_ENT,
-             KC_B,        KC_N,   KC_M,    KC_COMM,KC_DOT, KC_SLSH,          KC_BSLS,
-                                  KC_LANG1,KC_EQL, KC_LBRC,KC_RBRC,          LT(MDIA,KC_BSLS),
+             KC_LANG1,        KC_N,   KC_M,    KC_COMM,KC_DOT, KC_SLSH,          KC_BSLS,
+                                  LGUI(LSFT( KC_BSLS)),KC_EQL, KC_LBRC,KC_RBRC,          LT(MDIA,KC_BSLS),
              KC_LEFT,       KC_LANG2,
              KC_UP,
              KC_DOWN, KC_BSPC, KC_ENT
